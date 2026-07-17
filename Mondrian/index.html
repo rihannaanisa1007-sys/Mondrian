@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Piet Mondrian</title>
+            <style>
+                .container {
+                display: inline-grid;
+                grid-template-columns: 30px 100px auto;
+                grid-template-rows: 55px 55px 15px 15px;
+                background-color: white;
+                border: 2px solid #000000;
+                 padding: 5px;
+                }
+                
+                .container div {
+                background-color: #ffffff;
+                border: 2px solid black;
+                padding: 5px;
+                }
+
+                .item1{
+            	grid-column-start: 2;
+                grid column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3; 
+                }
+
+                .item2{
+	            grid-row-start: 3;
+                grid-row-end: 5;
+                }
+                
+            </style>
+        </head>
+
+    <body>
+        <div class="container">
+            <div class="item1" style="background-color: red; border: solid red;"></div>
+            <div></div>
+            <div style="background-color: red; border: solid red;"></div>
+            <div></div>  
+            <div style="background-color: red; border: solid red;"></div>
+            <div class="item2" style="background-color: blue;"></div>
+            <div class="item2"></div>
+            <div></div>
+            <div style="background-color: yellow;"></div>
+        </div>
+    </body>
+</html>
